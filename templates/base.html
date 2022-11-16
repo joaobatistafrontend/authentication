@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>{% block title%} {% endblock %}</title>
+</head>
+<body>
+    <h1>My Site</h1>
+    <button onclick="location.href='{% url 'home' %}'">Home</button>
+    <button onclick="location.href='{% url 'singup' %}'">SingUp</button>
+    <hr>
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>
